@@ -25,6 +25,7 @@
 .custom-file-upload {
     background-color: #645555;
     color: #FFFFFF;
+    
 }
 .custom-file-upload:hover {
     background-color: #523E3E;
@@ -119,6 +120,43 @@
     
 }
 
+.landingPage .camera-fullscreen{
+    width: 100%;
+    position: relative;
+}
+
+.clickedImageActions{
+    display: flex;
+    justify-content: space-between;
+}
+
+.landingPage .camera-fullscreen .stopCamera{
+   position: absolute;
+   top: 0;
+   right: 0;
+   width: 1rem;
+   margin-top: 0.3rem;
+   /* background-color: transparent; */
+
+}
+
+.adminPage .landingPage .camera-fullscreen .camera-controls{
+    background-color: red;
+    width: 100%;
+}
+
+.adminPage .landingPage .camera-fullscreen .camera-controls .click {
+    padding: 1.3rem;
+    background-color: rgba(255, 255, 255, 0.875);
+    position: absolute;
+    bottom: 10%;
+    left: 40%;
+    width: 10%;
+    height: 10%;
+    box-shadow: rgb(61, 56, 56) 0px 3px 8px   ;
+    border-radius: 50%;
+    
+}
 /* ===== Number Inputs Side-by-Side ===== */
 .adminPage .landingPage .number {
     display: flex;
@@ -130,10 +168,12 @@
     margin-bottom: 3rem;
 }
 
-.landingPage  label{
-    font-size: 2rem;
+.landingPage  .custom-file-upload{
+    font-size: 1rem;
+    padding: 0.5rem;
+    margin-right: 2rem;
+    margin-top: 1rem;
 }
-
 
 
 .adminPage .landingPage .number input {
@@ -219,17 +259,17 @@
 /* ===== File Upload Button (Same Style as Main Button) ===== */
 .custom-file-upload input[type="file"] {
     display: none;
-    color: white;
+    color: white;;
 }
 
 .custom-file-upload {
     display: inline-block;
-    padding: 0.6rem 1rem;
+    padding: 0.3rem 0.5rem;
     cursor: pointer;
     background-color: #645555;
     color: white;
     border-radius: 0.4rem;
-    font-size: 0.8rem;
+    font-size: 0.4rem;
     font-weight: 500;
     transition: background-color 0.3s ease;
     box-shadow: #FFEFEF 0px 3px 8px;
