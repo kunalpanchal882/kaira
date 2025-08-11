@@ -2,6 +2,8 @@
     margin-top: 2rem;
     width: 100%;
     display: flex;
+    flex-wrap: wrap;
+
 }
 
 .franchies .franchiesdata{
@@ -43,7 +45,7 @@
   display: inline-block;
   padding: 0.5rem 1.2rem;
   cursor: pointer;
-  background-color: #4CAF50;
+  background-color: #000000ad;
   color: white;
   border-radius: 4px;
   font-size: 0.7rem;
@@ -55,3 +57,31 @@
   justify-content: center;
 }
 
+@media (max-width:1024px){
+    .franchies .franchiesdata{
+        width: 100%;
+        flex-direction: column;
+        text-align: center;
+    }
+    .franchies .franchiesdata .text {
+    padding-left: 0;
+    margin-top: 1rem;
+  }
+  .franchies .franchiesdata img {
+    height: auto; /* let image height adapt */
+    max-height: 20rem;
+  }
+  .franchies .franchiesdata .custom-file-upload {
+    width: auto;
+    margin-left: 0;
+  }
+
+}
+@media (max-width: 480px) {
+  .franchies .franchiesdata h3 {
+    font-size: 1.2rem;
+  }
+  .franchies .franchiesdata p {
+    font-size: 0.9rem;
+  }
+}
