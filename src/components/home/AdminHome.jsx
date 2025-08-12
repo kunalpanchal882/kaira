@@ -179,6 +179,7 @@ const Home = () => {
                 <p>{number.num}</p>
                 <input type="text" />
                 <h3>{number.name}</h3>
+                <button>Edit here</button>
               </div>
             ))}
           </span>

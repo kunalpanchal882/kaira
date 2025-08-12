@@ -45,6 +45,7 @@
     padding-right: 2rem;
 }
 
+
 /* ===== Form Section ===== */
 .adminPage .landingPage {
     width: 100%;
@@ -63,7 +64,7 @@
 }
 
 .adminPage .landingPage label {
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.4rem;
     font-weight: 500;
     color: #5c4040;
     font-weight: 600;
@@ -71,9 +72,18 @@
 
 .adminPage .landingPage p {
     margin-bottom: 0.5rem;
+    margin-top: 0.8rem;
     font-weight: 500;
     color: #a37f7f;
     font-size: clamp(0.9rem, 2vw, 1.2rem); 
+}
+
+.adminPage .landingPage h3 {
+    margin-bottom: 0.5rem;
+    margin-top: 0.8rem;
+    font-weight: 500;
+    color: #474444;
+    font-size: clamp(1.5rem, 2vw, 2rem); 
 }
 
 .adminPage .landingPage input,
@@ -140,6 +150,7 @@
 
 }
 
+
 .adminPage .landingPage .camera-fullscreen .camera-controls{
     background-color: red;
     width: 100%;
@@ -188,6 +199,10 @@
     margin-top: 2rem;
 }
 
+.landingPage h1{
+    font-size: 2rem;
+}
+
 .adminPage .landingPage .banner {
     flex: 1 1 calc(20% - 2rem); /* exactly 5 per row with gap included */
     max-width: calc(20% - 2rem);
@@ -231,10 +246,11 @@
 }
 
 .adminPage .landingPage .main_categories .categori p {
-    font-size: clamp(0.9rem, 3vw, 1.2rem); 
+    font-size: clamp(0.9rem, 3vw, 1.7rem); 
     padding: 0.7rem;
     font-weight: 500;
 }
+
 
 .adminPage .landingPage .main_categories .categori .orignal_categori img {
     width: 100%;
@@ -248,7 +264,7 @@
 
 .adminPage .landingPage .main_categories .categori .edited_categori h3,
 .adminPage .landingPage .main_categories .categori .edited_categori input {
-    font-size: 1rem;
+    font-size: 0.6rem;
     margin-bottom: 0.3rem;
 }
 
@@ -261,6 +277,7 @@
     display: none;
     color: white;;
 }
+
 
 .custom-file-upload {
     display: inline-block;
@@ -326,8 +343,12 @@
     }
 
     .adminPage .landingPage {
-        font-size: clamp(0.9rem, 4vw, 1.1rem);
+        font-size: clamp(2rem, 4vw, 4rem);
         padding: 1rem;
+    }
+
+    .landingPage .quote label{
+        margin-bottom: 2rem;
     }
 
     .adminPage .landingPage button {
