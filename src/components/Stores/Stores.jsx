@@ -50,11 +50,23 @@ function Stores() {
     setIsCameraOpen(false);
   };
 
+  // Remove image + reset fields in edit mode
+  const removeImageEdit = (index) => {
+    const updatedStores = [...stores];
+    updatedStores[index] = { name: '', address: '', phone: '', mapsrc: '', image: '' };
+    setStores(updatedStores);
+  };
+
   // Capture image for new store
   const captureNewStoreImage = () => {
     const imageSrc = addWebcamRef.current.getScreenshot();
     setNewStore({ ...newStore, image: imageSrc });
     setAddCameraOpen(false);
+  };
+
+  // Remove image + reset all fields in Add New Store
+  const removeImageAdd = () => {
+    setNewStore({ name: '', address: '', phone: '', mapsrc: '', image: '' });
   };
 
   // Add new store to list
@@ -80,8 +92,14 @@ function Stores() {
           <div className="store-list" key={index}>
             {editingIndex === index ? (
               <div className="editmenu">
-                {/* Image Preview */}
-                {store.image && <img src={store.image} alt={store.name} width="300px" />}
+                {/* Image Preview + Remove */}
+                {store.image && (
+                  <div>
+                    <img src={store.image} alt={store.name} width="300px" />
+                    <br />
+                    <button id='editbtn' onClick={() => removeImageEdit(index)}>Remove</button>
+                  </div>
+                )}
 
                 {/* File Upload */}
                 <input
@@ -100,7 +118,7 @@ function Stores() {
                 />
 
                 {/* Camera Toggle */}
-                <button  id='editbtn' onClick={() => setIsCameraOpen(!isCameraOpen)}>
+                <button id='editbtn' onClick={() => setIsCameraOpen(!isCameraOpen)}>
                   {isCameraOpen ? 'Close Camera' : 'Use Camera'}
                 </button>
 
@@ -166,8 +184,14 @@ function Stores() {
       <h2 className="line2">Add New Store</h2>
       <div className="add">
         <div className="addmore">
-          {/* Image Preview */}
-          {newStore.image && <img src={newStore.image} alt="Preview" width="200px" />}
+          {/* Image Preview + Remove */}
+          {newStore.image && (
+            <div>
+              <img src={newStore.image} alt="Preview" width="200px" />
+              <br />
+              <button className='addbtn' onClick={removeImageAdd}>Remove</button>
+            </div>
+          )}
 
           {/* Input Fields */}
           <input
@@ -212,8 +236,7 @@ function Stores() {
           />
 
           {/* Camera Toggle for Add */}
-          
-          <button className='addbtn'  onClick={() => setAddCameraOpen(!addCameraOpen)}>
+          <button className='addbtn' onClick={() => setAddCameraOpen(!addCameraOpen)}>
             {addCameraOpen ? 'Close Camera' : 'Use Camera'}
           </button>
 
@@ -230,8 +253,8 @@ function Stores() {
               <button className='addbtn' onClick={captureNewStoreImage}>Capture Photo</button>
             </div>
           )}
-        <button className='addbtn' onClick={handleAddStore}>Add Store</button>
-          
+
+          <button className='addbtn' onClick={handleAddStore}>Add Store</button>
         </div>
       </div>
     </>
