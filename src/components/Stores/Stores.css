@@ -115,7 +115,9 @@ body{
     background:  #000000ad; 
     color:#fff; 
     border-radius:10px; 
-    border:none; }
+    border:none;
+ 
+   }
 
 
 
@@ -140,7 +142,14 @@ body{
     border-radius: .25rem;
     background: white;
 }
+.addbtn{
+  height: 2rem;
+  /* margin-bottom: 1rem; */
+}
+#editbtn{
+  margin-bottom: 1rem;
 
+}
 @media (max-width: 768px){
   .navbar_list a{ font-size: 1rem; }
   .store-list img{ height: 200px; }
