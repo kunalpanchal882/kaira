@@ -14,12 +14,14 @@
 }
 
 .navbar p{
-    font-size: clamp(0.9rem, 2vw, 1.2rem); 
+    font-size: clamp(0.7rem, 2vw, 1rem); 
     font-weight: 700;
-    color: #000000ad;
+    color: #625f5fad;
+    cursor: pointer;
 }
 
-.navbar p:hover{
-    cursor: pointer; 
-     font-size: clamp(0.5rem, 2vw, 1.3rem);
+.navbar p.active{
+    color: #010101;
+    font-size: clamp(1.1rem, 2vw, 1.4rem);
 }
+
