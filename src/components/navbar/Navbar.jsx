@@ -4,7 +4,7 @@ import "../navbar/Navbar.css"
 
 const Navbar = ({setPage}) => {
 
-const [activePage, setactivePage] = useState("")
+const [activePage, setactivePage] = useState("home")
 
   const handelClick = (page) => {
     setPage(page);
