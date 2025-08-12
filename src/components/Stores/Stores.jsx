@@ -138,6 +138,7 @@ function Stores() {
 
                 {/* Editable Fields */}
                 <input
+                  required
                   type="text"
                   value={store.name}
                   onChange={(e) => handleChange(e, 'name', index)}
@@ -145,18 +146,21 @@ function Stores() {
                 />
                 <input
                   type="text"
+                  required
                   value={store.address}
                   onChange={(e) => handleChange(e, 'address', index)}
                   placeholder="Store Address"
                 />
                 <input
                   type="text"
+                  required
                   value={store.phone}
                   onChange={(e) => handleChange(e, 'phone', index)}
                   placeholder="Store Phone"
                 />
                 <input
                   type="text"
+                  required
                   value={store.mapsrc}
                   onChange={(e) => handleChange(e, 'mapsrc', index)}
                   placeholder="Map Link"
@@ -195,18 +199,21 @@ function Stores() {
 
           {/* Input Fields */}
           <input
+            required
             type="text"
             value={newStore.name}
             onChange={(e) => setNewStore({ ...newStore, name: e.target.value })}
             placeholder="Store Name"
           />
           <input
+            required
             type="text"
             value={newStore.address}
             onChange={(e) => setNewStore({ ...newStore, address: e.target.value })}
             placeholder="Store Address"
           />
           <input
+            required
             type="text"
             value={newStore.phone}
             onChange={(e) => setNewStore({ ...newStore, phone: e.target.value })}
@@ -214,6 +221,7 @@ function Stores() {
           />
           <input
             type="text"
+            required
             value={newStore.mapsrc}
             onChange={(e) => setNewStore({ ...newStore, mapsrc: e.target.value })}
             placeholder="Google Map Link"
@@ -221,6 +229,7 @@ function Stores() {
 
           {/* File Upload */}
           <input
+
             type="file"
             accept="image/*"
             onChange={(e) => {
