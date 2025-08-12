@@ -10,6 +10,7 @@ function Login() {
 
   return (
     <>
+    <div className='login'>
     <div className='outerform'>
       <h2 className='line'>{isLogin ? 'Welcome Back' : 'Create Account'}</h2>
     <form>
@@ -40,6 +41,7 @@ function Login() {
         <button className='btn' 
         type='submit'>{isLogin? 'Login' : 'Signup'}</button>
     </form>
+    
     <>
       <p>
       {isLogin ? "Don't have an account?" : "Already have an account"}{" "}
@@ -53,6 +55,7 @@ function Login() {
       <img src="https://raw.githubusercontent.com/prebuiltui/prebuiltui/main/assets/login/googleFavicon.png" alt="googleFavicon" />
       Log in with Google
     </button> */}
+    </div>
     </div>
     </>
   )
