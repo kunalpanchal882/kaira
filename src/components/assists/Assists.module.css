@@ -1,0 +1,248 @@
+.assistsContainer{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.assistsContainer .heading {
+    margin-top: 2rem;
+    font-size: 2.1rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* BANNER SECTION */
+
+.assistsContainer .bannerContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+.assistsContainer .banner {
+    flex: 0 0 100%;
+    padding: 0.9rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2rem;
+    object-fit: cover;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.532);
+}   
+
+.assistsContainer .banner .bannerimage {
+    width: 100%;
+    height: 12rem;
+    overflow: hidden;
+}
+
+.assistsContainer .banner .bannerimage img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.assistsContainer .banner .banneredit{
+    width: 100%;
+    margin-top: 0.9rem;
+    display: flex;
+    flex-wrap: wrap;  /* allows button + text to break into new row */
+  gap: 0.5rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.assistsContainer .banner .banneredit button {
+    padding: 0.1rem 0.5rem;
+    border-radius: 0.7rem;
+    background-color: rgb(69, 68, 68);
+    color: rgb(215, 212, 212);
+    font-size: 1rem;
+    cursor: pointer;
+}   
+
+.assistsContainer .banner .banneredit span {
+    width: 100%;
+    padding: 0.2rem 0.7rem;
+    border-radius: 0.7rem;
+    background-color: rgb(69, 68, 68);
+}   
+
+
+.assistsContainer .banner .banneredit .customFileUpload {
+    color: rgb(215, 212, 212);
+    font-size: 1rem;   
+    cursor: pointer;
+}
+
+.assistsContainer .banner .banneredit .customFileUpload input {
+    display: none;
+}  
+
+/* CATOGORY SECTION */
+
+.assistsContainer .mainCatogory {
+   display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  width: 100%;
+}
+
+.assistsContainer .catogores{
+    padding: 0.9rem;
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 100%;
+    align-items: center;
+    margin-bottom: 2rem;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.532);
+}
+
+.assistsContainer .catogores .catogoresimage {
+    width: 100%;
+    height: 12rem;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.9rem;
+}   
+
+.assistsContainer .catimage{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.assistsContainer  .catogoresimage .catimage img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.assistsContainer .catogores .editCatogory{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+     /* flex-wrap: wrap; 
+    gap: 0.5rem; */
+    margin-top: 1rem;
+}
+
+.assistsContainer .catogores .editCatogory .editCatogoryText{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.assistsContainer .catogores .editCatogory .catogoryButtons{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.9rem;
+    justify-content: space-between;
+    align-items: end;
+}
+
+.assistsContainer .catogores .editCatogory .catogoryButtons button{
+    padding: 0.1rem 0.5rem;
+    border-radius: 0.7rem;
+    background-color: rgb(69, 68, 68);
+    color: rgb(215, 212, 212);
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.assistsContainer .catogores .editCatogory .customFileUpload {
+    color: rgb(215, 212, 212);
+    font-size: 1rem;   
+    cursor: pointer;
+}
+
+.assistsContainer .catogores .editCatogory .customFileUpload span{
+    width: 100%;
+    padding: 0.2rem 0.7rem;
+    border-radius: 0.7rem;
+    background-color: rgb(69, 68, 68);
+}
+   
+
+.assistsContainer .catogores .editCatogory .customFileUpload input {
+    display: none;
+}  
+
+/* ✅ Mobile-first (your current code is fine for phone) */
+
+/* ✅ Tablet view (≥768px) */
+/* ✅ Mobile-first (phone) → your current code already works */
+
+/* ✅ Tablet view (≥768px) */
+
+@media (min-width: 768px) {
+  .assistsContainer .catogores {
+    flex: 0 0 calc(50% - 1.5rem);
+    max-width: calc(50% - 1.5rem);
+  }
+  .assistsContainer .banner {
+    flex: 0 0 calc(50% - 1.5rem);
+    max-width: calc(50% - 1.5rem);
+  }
+}
+
+/* Laptop/Desktop → 5 per row */
+@media (min-width: 1024px) {
+  .assistsContainer .catogores {
+    flex: 0 1 calc(25% - 1.5rem); /* 100/5 = 20% */
+  }
+  .assistsContainer .banner {
+    flex: 0 1 calc(25% - 1.5rem); /* 100/4 = 25% */
+  }
+
+  .assistsContainer .banner .banneredit {
+    gap: 0.5rem;
+  }
+
+  .assistsContainer .banner .banneredit .customFileUpload {
+    color: rgb(215, 212, 212);
+    font-size: 0.8rem;   
+    cursor: pointer;
+}
+
+.assistsContainer .banner .banneredit button {
+    font-size: 0.8rem;
+}   
+
+
+  .assistsContainer .catogores .editCatogory .catogoryButtons{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 0.9rem;
+    justify-content: space-between;
+    align-items: center;
+    }
+
+    .assistsContainer .catogores .editCatogory .customFileUpload {
+    color: rgb(215, 212, 212);
+    font-size: 0.8rem;   
+    cursor: pointer;
+    }
+
+    .assistsContainer .catogores .editCatogory .catogoryButtons button{
+    font-size: 0.8rem;
+    cursor: pointer;
+    }
+
+    .assistsContainer .catogores .editCatogory{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+     flex-wrap: wrap; 
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+}

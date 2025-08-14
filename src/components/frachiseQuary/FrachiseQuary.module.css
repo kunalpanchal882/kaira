@@ -1,0 +1,80 @@
+.FrachiesQuaryContainer{
+   width: 100%;
+}
+
+.FrachiesQuaryContainer .franchiesQuaryheading{
+    text-align: center;
+}
+
+.FrachiesQuaryContainer .frenchiesQuaryDetails{
+    width: 100%;
+    background-color: #fddddd83;
+    padding: 0.8rem;
+    border-radius: 0.7rem;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.FrachiesQuaryContainer .frenchiesQuaryDetails p{
+    font-size: 1.1rem;
+}
+
+.FrachiesQuaryContainer .frenchiesQuaryDetails .iconcsMore{
+     font-size: 1.1rem;
+}
+
+.FrachiesQuaryContainer .frenchiesQuaryBox .rotateIcon{
+      transform: rotate(180deg);
+  transition: transform 0.3s ease;
+
+}
+
+.FrachiesQuaryContainer .frenchiesDetailSection{
+    padding: 2rem;
+}
+
+.FrachiesQuaryContainer .frenchiesQuaryBox .frenchiesQuaryBox{
+    width: 100%;
+    background-color: #fee4e456;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding-left: 0.6rem;
+    padding-top: 0.8rem;
+     box-shadow: 3px 2px 8px rgba(0,0,0,0.12);
+    padding: 2rem;
+}
+
+.FrachiesQuaryContainer .paginationControls{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    padding: 2rem;
+}
+
+.FrachiesQuaryContainer .paginationControls .previweICone {
+    transform: rotate(180deg);
+    color: black;
+}
+
+.FrachiesQuaryContainer .paginationControls .preview{
+    background-color: rgb(230, 98, 98);
+}
+
+.FrachiesQuaryContainer .paginationControls .preview:hover{
+    background-color: rgb(224, 82, 82);
+}
+
+.FrachiesQuaryContainer .paginationControls .next{
+    background-color: rgb(74, 204, 115);
+}
+
+.FrachiesQuaryContainer .paginationControls button{
+    background-color: #d19d9d8b;
+    padding: 0.2rem 0.7rem;
+}
+
+.FrachiesQuaryContainer .paginationControls button:hover{
+    background-color: rgb(17, 182, 17);
+}

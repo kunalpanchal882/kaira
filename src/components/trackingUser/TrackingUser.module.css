@@ -1,0 +1,29 @@
+.trackingUserContainer{
+    width: 100%;
+    margin-top: 2rem;
+}
+
+.trackingUserContainer .scrolDateButtons{
+    display: flex;
+    overflow-x: auto;
+    padding: 20px;
+    white-space: nowrap;
+    margin-bottom: 15px;
+    padding-bottom: 5px;
+}
+.trackingUserContainer .scrolDateButtons button {
+    margin-right: 10px;
+    flex: 0 0 auto; /* prevents shrink */
+    background: #eee;
+    color: #000;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s;
+}
+
+.trackingUserContainer .scrollableChartContainer{
+    width: 100%;
+    padding: 2rem;
+}

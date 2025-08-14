@@ -3,15 +3,15 @@
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-
 }
 
 .franchies .franchiesdata{
-    width: 50%;
+    width: 25%;
     object-fit: cover;
     padding: 1rem 2rem;
     display: flex;
     align-items: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .franchies .franchiesdata .img .selectImg{
@@ -35,7 +35,7 @@
 
 .franchies .franchiesdata img{
     width: 100%;
-    height: 20rem;
+    height: 19rem;
     max-height: 70rem;
 }
 

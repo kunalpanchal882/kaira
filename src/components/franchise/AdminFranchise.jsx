@@ -1,4 +1,5 @@
 import "../franchise/AdminFranchise.css";
+import FranchiesQuary from "../frachiseQuary/FrachiesQuary";
 const AdminFranchise = () => {
   const FranchiseData = {
     franchise: [
@@ -17,33 +18,36 @@ const AdminFranchise = () => {
     ],
   };
 
-  const renderFranchies = FranchiseData.franchise.map(
-    (franchisedata, index) => (
-      <div className="franchiesdata" key={index}>
-        <div className="img">
-          <img src={franchisedata.image} />
-          <div className="selectImg">
-            <label className="custom-file-upload">
-              <input type="file" />
-              Select Image
-            </label>
-          </div>
-        </div>
-        <div className="text">
-          <div className="name">
-            <h3>Name</h3>
-            <p>{franchisedata.name}</p>
-          </div>
-          <div className="role">
-            <h3>Role</h3>
-            <p>{franchisedata.role}</p>
-          </div>
-        </div>
-      </div>
-    )
-  );
+  // const renderFranchies = FranchiseData.franchise.map(
+  //   (franchisedata, index) => (
+  //     <div className="franchiesdata" key={index}>
+  //       <div className="img">
+  //         <img src={franchisedata.image} />
+  //         <div className="selectImg">
+  //           <label className="custom-file-upload">
+  //             <input type="file" />
+  //             Select Image
+  //           </label>
+  //         </div>
+  //       </div>
+  //       <div className="text">
+  //         <div className="name">
+  //           <h3>Name</h3>
+  //           <p>{franchisedata.name}</p>
+  //         </div>
+  //         <div className="role">
+  //           <h3>Role</h3>
+  //           <p>{franchisedata.role}</p>
+  //         </div>
+  //       </div>
+  //     </div>
+  //   )
+  // );
 
-  return <div className="franchies">{renderFranchies}</div>;
+  return <div className="franchies">
+    <FranchiesQuary/>
+    {/* {renderFranchies} */}
+    </div>;
 };
 
 export default AdminFranchise;

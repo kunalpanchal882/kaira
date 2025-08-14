@@ -1,20 +1,5 @@
 
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: white;
-  padding: 1rem;
-}
-
 .outerform {
   background-color: rgb(251, 251, 251);
   color: #2d1515;

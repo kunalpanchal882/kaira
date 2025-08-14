@@ -4,7 +4,9 @@ import AdminGallery from "../components/gallery/AdminGallery";
 import AdminFranchise from "../components/franchise/AdminFranchise";
 import AdminJwellery from "../components/jwellery/AdminJwellery";
 import Stores from '../components/Stores/Stores';
+import Login from "../components/Login/Login";
 import { useState } from "react";
+import Assists from "../components/assists/assists";
 
 const AdminPage = () => {
 
@@ -22,6 +24,8 @@ const AdminPage = () => {
         return <AdminGallery />;
       case "franchise":
         return <AdminFranchise />;
+      case "assists":
+        return <Assists/>
       case "jewellery":
         return <AdminJwellery/>
       default:
