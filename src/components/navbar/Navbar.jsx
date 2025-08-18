@@ -18,7 +18,7 @@ const [activePage, setactivePage] = useState("home")
       <p className={activePage ==="gallery" ? "active" : ""} onClick={() => handelClick("gallery")}>Gallery</p>
       <p className={activePage ==="franchise" ? "active" : ""} onClick={() => handelClick("franchise")}>Franchise</p>
       <p className={activePage ==="jewellery" ? "active" : ""} onClick={() => handelClick("jewellery")}>Jewellery</p>
-      <p className={activePage ==="assits" ? "active" : ""} onClick={() => handelClick("assists")}>assists</p>
+      <p className={activePage ==="assits" ? "active" : ""} onClick={() => handelClick("assits")}>assists</p>
     </div>
   )
 }

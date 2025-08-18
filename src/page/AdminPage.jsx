@@ -24,7 +24,7 @@ const AdminPage = () => {
         return <AdminGallery />;
       case "franchise":
         return <AdminFranchise />;
-      case "assists":
+      case "assits":
         return <Assists/>
       case "jewellery":
         return <AdminJwellery/>

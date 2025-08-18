@@ -2,6 +2,8 @@
     display: flex;
     flex-direction: column;
     text-align: center;
+    align-items: center;
+
 }
 
 .assistsContainer .heading {
@@ -182,6 +184,12 @@
 /* ✅ Tablet view (≥768px) */
 
 @media (min-width: 768px) {
+
+    .assistsContainer{
+        padding-left: 1.3rem;
+    }
+
+
   .assistsContainer .catogores {
     flex: 0 0 calc(50% - 1.5rem);
     max-width: calc(50% - 1.5rem);
@@ -194,6 +202,11 @@
 
 /* Laptop/Desktop → 5 per row */
 @media (min-width: 1024px) {
+
+    .assistsContainer{
+        padding-left: 0.9rem;
+    }
+
   .assistsContainer .catogores {
     flex: 0 1 calc(25% - 1.5rem); /* 100/5 = 20% */
   }
