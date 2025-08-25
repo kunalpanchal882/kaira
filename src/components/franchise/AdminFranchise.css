@@ -4,12 +4,19 @@
     display: flex;
     flex-wrap: wrap;
 }
+.owner{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 .franchies .franchiesdata{
     width: 25%;
     object-fit: cover;
     padding: 1rem 2rem;
     display: flex;
+    justify-content: center;
     align-items: center;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }

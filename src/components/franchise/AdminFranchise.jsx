@@ -46,7 +46,9 @@ const AdminFranchise = () => {
 
   return <div className="franchies">
     <FranchiesQuary/>
-    {renderFranchies}
+    <div className="owner">
+      {renderFranchies}
+    </div>
     </div>;
 };
 
